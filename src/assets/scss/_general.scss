@@ -1,0 +1,113 @@
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+}
+h1{
+  color: $primary-color;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.hero-image{
+min-height: 100vh;
+background: url('../../assets/img/mobile/background.jpg') no-repeat center center;
+background-size: cover;
+position:relative;
+}
+.hero-content{
+  position:absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  h3{
+    font-weight: bold;
+    padding:4.5rem 0;
+  }
+}
+.hero-buttons{
+  position:absolute;
+  width: 100%;
+  bottom: 1.5rem;
+}
+.botons{
+  // right:50vw;
+  // width: 50vw;
+  position:absolute;
+  bottom:1rem;
+}
+
+
+.button{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding:0.6rem 1.4rem;
+  border-radius: 1.4rem;;
+}
+
+.seccio-formulari{
+  padding-top:4rem;
+  .callout{
+    display: none;
+  }
+}
+
+#sabermes, #apuntat{
+  margin-top:2rem;
+}
+#sabermes{
+  hr{
+    border:1px solid $primary-color;
+    width: 100%;
+  }
+  h3{padding-top:2rem;}
+  .cell{
+    margin:1rem 0;
+  }
+  .fa {font-size:2rem;}
+.resum{
+
+  .cell{
+    padding:0 1rem;
+  }
+   p{
+  font-size:0.8rem;
+    &:first-of-type{
+      font-size:1rem;
+font-weight: bold;
+margin-bottom:0.2rem;
+    }
+  }
+}
+}
+
+.num{font-size:4.8rem;
+  font-weight: bold;
+  margin:0 auto;
+  width:8rem;
+  height: 8rem;
+  border: 0.2rem solid $primary-color;
+border-radius:50%;}
+#logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  position: relative;
+}
+#logo:after {
+  content:"ENDIMONIAT";
+  position: absolute;
+  left: 17.2%;
+  top: 0.2rem;
+}
+$darkerprimary: $white;
+#logo:after {
+  /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
+  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, $darkerprimary 25%, $darkerprimary 50%, transparent 50%, transparent 75%, $darkerprimary 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: block;
+  text-shadow: none;
+}
